@@ -470,8 +470,8 @@ struct cpufreq_limit_handle *cpufreq_limit_get(unsigned long min_freq,
 		list_add_tail(&handle->node, &cpufreq_limit_requests);
 	}
 
-	handle->min = min_freq;
-	handle->max = max_freq;
+	handle->min = 0;
+	handle->max = 0;
 
 	curr_time = ktime_get();
 	msecs64 = ktime_to_ns(curr_time);
