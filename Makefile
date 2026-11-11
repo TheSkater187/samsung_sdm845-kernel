@@ -772,10 +772,8 @@ export DISABLE_CFI
 endif
 
 ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
-KBUILD_CFLAGS	+= -O3
+KBUILD_CFLAGS   += -Os
 else
-#KBUILD_CFLAGS   += -Os
-#else
 KBUILD_CFLAGS   += -pipe -O3
 endif
 
