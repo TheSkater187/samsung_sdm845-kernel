@@ -3,7 +3,7 @@
  * them to run sooner, but does not allow tons of sleepers to
  * rip the spread apart.
  */
-SCHED_FEAT(GENTLE_FAIR_SLEEPERS, true)
+SCHED_FEAT(GENTLE_FAIR_SLEEPERS, false)
 
 /*
  * Place new tasks ahead so that they do not starve already running
@@ -36,6 +36,12 @@ SCHED_FEAT(STRICT_SKIP_BUDDY, true)
  * cache buddy being migrated away, increases cache locality.
  */
 SCHED_FEAT(CACHE_HOT_BUDDY, true)
+
+/*
+ *
+ * F**k It. Bring Back Arch Power!!!!!!
+ */
+SCHED_FEAT(ARCH_POWER, false)
 
 /*
  * Allow wakeup-time preemption of the current task:
